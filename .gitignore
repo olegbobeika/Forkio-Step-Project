@@ -1,0 +1,7 @@
+dist/**/*
+.idea/**/*
+*.xml
+*.iml
+package-lock.json
+node_modules/**/*
+.DS_Store
