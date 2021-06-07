@@ -1,0 +1,38 @@
+.btn
+{
+    // font-family: Montserrat; // - подключить шрифті
+    padding: 10px 40px;
+    border-radius: 40px;
+    color: textColor(white);
+
+    &-colored
+    {
+        @include border(1px,solid,bgColor(purple));
+        @include fontCss(16px, 700);
+        background: bgColor(purple);
+        text-transform: capitalize;
+    }
+
+    &-colored:hover
+    {
+        background: bgColor(white);
+        color: textColor(purple);
+    }
+
+    //для самого нижнего блока
+    &-transparent
+    {
+        @include fontCss(15px, 400);
+        background: bgColor(whiteTransparent15);
+        padding: 19px 48px;
+        text-transform: uppercase;
+    }
+
+    //кнопка на большую часть блока
+    &-large
+    {
+        font-size: 21px;
+        padding: 23px 61px;
+    }
+    
+}

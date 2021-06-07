@@ -1,28 +1,31 @@
 {
-  "name": "lasles_vpn",
+  "name": "forkio_step_project",
   "version": "1.0.0",
-  "description": "My VPN project",
+  "description": "second step broject by Oleg Bobeika and Aleksandr Mayboroda",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp dev",
-    "build": "gulp build"
+    "build": "gulp build",
+    "dev": "gulp dev"
   },
-  "author": "Oleg Bobeika",
+  "keywords": [
+    "step",
+    "forkio"
+  ],
+  "author": "Oleg Bobeika and Aleksandr Mayboroda",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
-    "gulp-css-minify": "^0.9.2",
-    "gulp-cssmin": "^0.2.0",
     "gulp-imagemin": "^7.1.0",
-    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-svgmin": "^3.0.0",
+    "gulp-uglify-es": "^2.0.0"
   },
   "dependencies": {}
 }

@@ -1,0 +1,40 @@
+@import "globals/reset";
+@import "globals/vars";
+@import "globals/mixin";
+@import "globals/functions";
+@import "button/button";
+
+body,html
+{
+    font-family: Montserrat;
+}
+
+ul,ol
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.container
+{
+    max-width: 320px;
+    @include marginSidesAuto(); //auto 
+}
+
+@media(min-width: 481px)
+{
+    .container
+    {
+        max-width: 768px;
+    }
+  
+}
+
+
+@import "header/header";
+@import "logo/logo";
+@import "menu/menu";

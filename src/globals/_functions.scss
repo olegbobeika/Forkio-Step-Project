@@ -1,0 +1,11 @@
+// цвета текста
+@function textColor($name)
+{
+    @return map-get($textColor, $name);
+}
+
+// цвета фонов
+@function bgColor($name)
+{
+    @return map-get($backGrounds, $name);
+}
