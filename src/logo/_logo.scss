@@ -1,0 +1,33 @@
+.logo
+{
+    @include flex(row,flex-start,center);
+    
+
+    &__image
+    {
+        background: url(../img/logo/pencil.png) no-repeat center center;
+        width: 41px;
+        height: 41px;
+        // @include marginSidesAuto(none, 15px);
+    }
+
+    &__image:hover
+    {
+        background: url(../img/logo/pencil-hover.png) no-repeat center center;
+    }
+
+    &__text
+    {
+        font-family: Lato;
+        @include fontCss(24px,700);
+        text-transform: uppercase;
+        color: textColor(purple);
+        display: none;
+        margin-left: 15px;
+
+    }
+    &__text:hover
+    {
+        color: textColor(white);
+    }
+}

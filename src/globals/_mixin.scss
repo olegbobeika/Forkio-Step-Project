@@ -1,0 +1,41 @@
+
+@mixin flex(
+    $direction: row,
+    $justify: flex-start,
+    $align: flex-start,
+)
+{
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin marginSidesAuto(
+    $left: auto,
+    $right: auto,
+)
+{
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin fontCss(
+    $size: 14px,
+    $weight: 400,
+    $lineHeight: normal,
+)
+{
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+}
+
+@mixin border(
+    $size: 1px,
+    $type: solid,
+    $color: transparent,
+)
+{
+    border: $size $type $color;
+}

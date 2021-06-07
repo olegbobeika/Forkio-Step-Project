@@ -1,0 +1,108 @@
+.menu
+{
+    @include flex(column,flex-start,flex-start);
+
+    &__checkbox
+    {
+        display: none;
+    }
+
+    &__burger
+    {
+        @include flex(column,center,flex-end);
+        width: 26px;
+        height: 26px;
+    }
+    &__burger-line
+    {
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    &__burger-line,
+    &__burger::after
+    {
+        width: 26px;
+    }
+    &__burger::before
+    {
+        content: '';
+        width: 15px;
+    }
+    &__burger::after
+    {
+        content: '';
+    }
+    &__burger-line,
+    &__burger::before,
+    &__burger::after
+    {
+        height: 3px;
+        background: bgColor(trueWhite);
+        border-radius: 5px;
+        transition: transform .5s ease-out;
+    }
+
+    &__checkbox:checked + &__burger
+    {
+        @include flex(column,center,center);
+    }
+
+    &__checkbox:checked + &__burger:before
+    {
+        width: 26px;
+        transform: rotate(45deg) translateX(8%);
+    }
+    &__checkbox:checked + &__burger &__burger-line
+    {
+        display: none;
+    }
+    &__checkbox:checked + &__burger::after
+    {
+        transform: rotate(-45deg) translateX(8%);
+    }
+    &__checkbox:checked ~ &__list
+    {
+        display: block;
+    }
+  
+    &__list
+    {
+        position: absolute;
+        top: 73px;
+        left: 15px;
+        right: 15px;
+        background: bgColor(headerMenu);
+        display: none;
+        border-bottom: 14px solid bgColor(transparent);
+    }
+
+    &__item
+    {
+        @include fontCss(26px);
+        color: textColor(white);
+        padding: 30px 35px;
+        border-bottom: 3px solid bgColor(whiteTransparent15);
+        transition: padding .5s ease-out;
+    }
+
+    &__item:active,
+    &__item:focus
+    {
+        color: textColor(purple);
+        position: relative;
+        padding-left: 40px;
+    }
+
+    &__item:active::before,
+    &__item:focus::before
+    {
+        content: '';
+        background: bgColor(purple);
+        width: 8px;
+        height: 53px;
+        position: absolute;
+        left: 2px;
+        top: 19px;
+    }
+   
+}
