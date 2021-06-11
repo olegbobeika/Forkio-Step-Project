@@ -25,6 +25,16 @@ a
     @include marginSidesAuto(); //auto 
 }
 
+//общие стили без размера
+.section-title
+{
+    font-family: Montserrat; //на всяк случай
+    @include fontCss(26px,700);
+    color: textColor(white);
+}
+
+
+
 @media(min-width: 481px)
 {
     .container
@@ -38,3 +48,12 @@ a
 @import "header/header";
 @import "logo/logo";
 @import "menu/menu";
+@import "fork-app/fork-app"; 
+@import "talking-about/talking-about";
+
+
+
+.text-uppercase
+{
+    text-transform: uppercase;
+}
