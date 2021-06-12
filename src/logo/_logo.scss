@@ -10,12 +10,8 @@
         height: 41px;
         // @include marginSidesAuto(none, 15px);
     }
-
-    &__image:hover
-    {
-       background-position: center center;
-       background: url(../img/logo/pencil-hover.png) no-repeat center center;
-    }
+    
+    
 
     &__text
     {
@@ -27,11 +23,17 @@
         margin-left: 15px;
 
     }
-    &__text:hover
+   
+    &:hover &__image
+    {
+       background-position: center center;
+       background: url(../img/logo/pencil-hover.png) no-repeat center center;
+    }
+    &:hover &__text
     {
         color: textColor(white);
     }
-
+    
     @media(min-width: 481px)
     {
         &__text

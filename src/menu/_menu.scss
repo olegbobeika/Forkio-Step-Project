@@ -67,6 +67,7 @@
   
     &__list
     {
+        @include flex(column,flex-start,center);
         position: absolute;
         top: 73px;
         left: 15px;
@@ -82,6 +83,7 @@
         color: textColor(white);
         padding: 30px 35px;
         border-bottom: 3px solid bgColor(whiteTransparent15);
+        display: block;
     }
    
    
