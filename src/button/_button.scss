@@ -43,5 +43,14 @@
         // padding: 23px 61px;
         
     }
+
+    @media(min-width: 481px)
+    {
+        &-large
+        {
+            font-size: 21px;            
+        }
+      
+    }
     
 }
