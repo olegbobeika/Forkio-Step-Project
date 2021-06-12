@@ -28,11 +28,20 @@
         text-transform: uppercase;
     }
 
+    &-absolute
+    {
+        position: absolute;
+        top: -45%;
+    }
+
     //кнопка на большую часть блока
     &-large
     {
-        font-size: 21px;
-        padding: 23px 61px;
+        font-size: 18px;
+        // padding: 15px 30px;
+        // font-size: 18px;
+        // padding: 23px 61px;
+        
     }
     
 }
