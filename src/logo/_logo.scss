@@ -13,7 +13,8 @@
 
     &__image:hover
     {
-        background: url(../img/logo/pencil-hover.png) no-repeat center center;
+       background-position: center center;
+       background: url(../img/logo/pencil-hover.png) no-repeat center center;
     }
 
     &__text
@@ -29,5 +30,13 @@
     &__text:hover
     {
         color: textColor(white);
+    }
+
+    @media(min-width: 481px)
+    {
+        &__text
+        {
+            display: inline-block;
+        }
     }
 }

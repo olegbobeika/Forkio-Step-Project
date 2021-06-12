@@ -9,4 +9,10 @@
     left: 0;
     z-index: 333;
     box-sizing: border-box;
+
+    @media(min-width: 481px)
+    {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
 }
