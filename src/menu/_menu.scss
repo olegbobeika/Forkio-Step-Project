@@ -67,6 +67,7 @@
   
     &__list
     {
+        @include flex(column,flex-start,center);
         position: absolute;
         top: 73px;
         left: 15px;
@@ -82,27 +83,89 @@
         color: textColor(white);
         padding: 30px 35px;
         border-bottom: 3px solid bgColor(whiteTransparent15);
-        transition: padding .5s ease-out;
-    }
-
-    &__item:active,
-    &__item:focus
-    {
-        color: textColor(purple);
-        position: relative;
-        padding-left: 40px;
-    }
-
-    &__item:active::before,
-    &__item:focus::before
-    {
-        content: '';
-        background: bgColor(purple);
-        width: 8px;
-        height: 53px;
-        position: absolute;
-        left: 2px;
-        top: 19px;
+        display: block;
     }
    
+   
+
+    @media(max-width: 480px)
+    {
+        &__item
+        {
+            transition: padding .5s ease-out;
+        }
+        &__item:active,
+        &__item:focus
+        {
+            color: textColor(purple);
+            position: relative;
+            padding-left: 40px;
+        }
+    
+        &__item:active::before,
+        &__item:focus::before
+        {
+            content: '';
+            background: bgColor(purple);
+            width: 8px;
+            height: 53px;
+            position: absolute;
+            left: 2px;
+            top: 19px;
+        }
+    }
+
+    @media(min-width: 481px)
+    {
+        @include flex(row,center);
+        width: 100%;
+       
+        &__burger
+        {
+            display: none;
+            pointer-events: none;
+        }
+        &__list
+        {
+            display: inline-block;
+            position: static;
+            background: bgColor(transparent);
+            @include flex(row,space-around,center);
+            width: 100%;
+            padding-top: 25px;
+            border-bottom: none;
+        }
+        &__item
+        {
+            @include fontCss(16px,700);
+            color: textColor(purple);
+            border-bottom: none;
+            padding: 0;
+        }
+
+        &__item:hover
+        {
+            color: textColor(white);
+        }
+
+    }
+
+    @media(min-width: 993px)
+    {
+        width: auto;
+        flex-grow: 1;
+        // @include flex(row,flex-end);
+        &__list
+        {
+            // padding-left: 30%;
+            padding-right: 50px;
+            padding-top: 0;
+            @include flex(row,flex-end,center);
+        }
+        &__item:not(:last-child)
+        {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
 }
