@@ -157,10 +157,15 @@
         // @include flex(row,flex-end);
         &__list
         {
-            padding-left: 300px;
+            // padding-left: 30%;
             padding-right: 50px;
             padding-top: 0;
-            @include flex(row,space-between,center);
+            @include flex(row,flex-end,center);
+        }
+        &__item:not(:last-child)
+        {
+            margin-left: 10px;
+            margin-right: 10px;
         }
     }
 }
