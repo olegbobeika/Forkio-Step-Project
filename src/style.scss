@@ -3,6 +3,7 @@
 @import "globals/mixin";
 @import "globals/functions";
 @import "button/button";
+@import "editor/editor";
 
 body,html
 {
@@ -22,7 +23,7 @@ a
 .container
 {
     min-width: 320px;
-    @include marginSidesAuto(); //auto 
+    @include marginSidesAuto(); //auto
 }
 
 //общие стили без размера
@@ -41,7 +42,7 @@ a
     {
         max-width: 768px;
     }
-  
+
 }
 
 @media(min-width: 993px)
@@ -50,14 +51,14 @@ a
     {
         max-width: 1200px;
     }
-  
+
 }
 
 
 @import "header/header";
 @import "logo/logo";
 @import "menu/menu";
-@import "fork-app/fork-app"; 
+@import "fork-app/fork-app";
 @import "talking-about/talking-about";
 
 
