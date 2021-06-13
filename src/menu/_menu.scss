@@ -149,4 +149,18 @@
         }
 
     }
+
+    @media(min-width: 993px)
+    {
+        width: auto;
+        flex-grow: 1;
+        // @include flex(row,flex-end);
+        &__list
+        {
+            padding-left: 300px;
+            padding-right: 50px;
+            padding-top: 0;
+            @include flex(row,space-between,center);
+        }
+    }
 }
