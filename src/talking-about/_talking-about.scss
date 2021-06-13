@@ -5,6 +5,11 @@
     {
         background: bgColor(trueWhite) url(../img/talking-about/bg-talking-about.png) no-repeat top center;
         background-size: cover;
+      
+    }
+
+    &__container
+    {
         text-align: center;
         padding-left: 20px;
         padding-right: 20px;
@@ -63,7 +68,7 @@
 
     @media(min-width: 481px)
     {
-        &__bg
+        &__container
         {
             padding-left: 10px;
             padding-right: 10px;
@@ -95,7 +100,7 @@
 
     @media(min-width: 993px)
     {
-        &__bg
+        &__container
         {
             padding-left: 80px;
             padding-right: 80px;

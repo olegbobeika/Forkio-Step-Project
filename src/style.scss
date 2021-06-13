@@ -24,6 +24,10 @@ a
     min-width: 320px;
     @include marginSidesAuto(); //auto 
 }
+.sub-container
+{
+    // width: auto;
+}
 
 //общие стили без размера
 .section-title
@@ -50,9 +54,20 @@ a
     {
         max-width: 1200px;
     }
-  
 }
-
+@media(min-width: 993px)
+{
+    .container
+    {
+        min-width: unset;
+        max-width: unset;
+    }
+    .sub-container
+    {
+        max-width: 1200px;
+        @include marginSidesAuto(); //auto 
+    }
+}
 
 @import "header/header";
 @import "logo/logo";

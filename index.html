@@ -13,33 +13,38 @@
 
 <body>
     <header class="header container">
-        <a href="#" class="logo">
-            <p class="logo__image"></p>
-            <h2 class="logo__text">forkio</h2>
-        </a>
-        <div class="btn-block">
-            <a href="#" class="btn btn-colored">buy now</a>
-            <!-- <a href="#" class="btn btn-transparent">buy now</a> -->
+        <div class="sub-container header__container">
+            <a href="#" class="logo">
+                <p class="logo__image"></p>
+                <h2 class="logo__text">forkio</h2>
+            </a>
+            <div class="btn-block">
+                <a href="#" class="btn btn-colored">buy now</a>
+                <!-- <a href="#" class="btn btn-transparent">buy now</a> -->
+            </div>
+            <div class="menu">
+                <input type="checkbox" name="menu_checkbox" id="menu_checkbox" class="menu__checkbox">
+                <label for="menu_checkbox" class="menu__burger">
+                    <span class="menu__burger-line"></span>
+                </label>
+                <nav class="menu__list">
+                    <a href="#" class="menu__item">Overview</a>
+                    <a href="#" class="menu__item">About Fork</a>
+                    <a href="#" class="menu__item">Buying Options</a>
+                    <a href="#" class="menu__item">Support</a>
+                </nav>          
+            </div>
         </div>
-        <div class="menu">
-            <input type="checkbox" name="menu_checkbox" id="menu_checkbox" class="menu__checkbox">
-            <label for="menu_checkbox" class="menu__burger">
-                <span class="menu__burger-line"></span>
-            </label>
-            <nav class="menu__list">
-                <a href="#" class="menu__item">Overview</a>
-                <a href="#" class="menu__item">About Fork</a>
-                <a href="#" class="menu__item">Buying Options</a>
-                <a href="#" class="menu__item">Support</a>
-            </nav>          
-        </div>
+      
     </header>
     <main class="main">
         <section class="fork-app container">
             <div class="fork-app__header">
-                <h1 class="section-title fork-app__title">Fork App</h1>
-                <h3 class="fork-app__sub-title">A Real Gamechanger In The World Of Web-Development</h3>
-                <p class="fork-app__secondary-text text-uppercase">v. 2.8 For Mac and Windows</p>
+                <div class="sub-container fork-app__container">
+                    <h1 class="section-title fork-app__title">Fork App</h1>
+                    <h3 class="fork-app__sub-title">A Real Gamechanger In The World Of Web-Development</h3>
+                    <p class="fork-app__secondary-text text-uppercase">v. 2.8 For Mac and Windows</p>
+                </div>
             </div>
             
             <div class="fork-app__trial">
@@ -50,48 +55,51 @@
 
         <section class="talking-about container">
             <div class="talking-about__bg">
-                <h1 class="section-title talking-about__title">people are Talking About Fork</h1>
-                <ul class="talking-about__list">
-                    <li class="talking-about__item">
-                        <div class="talking-about__item-image">
-                            <img src="dist/img/talking-about/items/item1.png" alt="image 1">
-                        </div>
-                        <p class="talking-about__item-text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
-                    </li>
-                    <li class="talking-about__item">
-                        <div class="talking-about__item-image">
-                            <img src="dist/img/talking-about/items/item2.png" alt="image 2">
-                        </div>
-                        <p class="talking-about__item-text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
-                    </li>
-                    <li class="talking-about__item">
-                        <div class="talking-about__item-image">
-                            <img src="dist/img/talking-about/items/item3.png" alt="image 3">
-                        </div>
-                        <p class="talking-about__item-text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.</p>
-                    </li>
-                    <li class="talking-about__item">
-                        <div class="talking-about__item-image">
-                            <img src="dist/img/talking-about/items/item4.png" alt="image 4">
-                        </div>
-                        <p class="talking-about__item-text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
-                    </li>
-                    <li class="talking-about__item">
-                        <div class="talking-about__item-image">
-                            <img src="dist/img/talking-about/items/item5.png" alt="image 5">
-                        </div>
-                        <p class="talking-about__item-text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus.</p>
-                    </li>
-                    <li class="talking-about__item">
-                        <div class="talking-about__item-image">
-                            <img src="dist/img/talking-about/items/item6.png" alt="image 6">
-                        </div>
-                        <p class="talking-about__item-text">Fusce pharetra erat id odio blandit, nec  pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
-                    </li>
-                </ul>
-                <p class="talking-about__text">
-                    Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
+                <div class="sub-container talking-about__container">
+                    <h1 class="section-title talking-about__title">people are Talking About Fork</h1>
+                    <ul class="talking-about__list">
+                        <li class="talking-about__item">
+                            <div class="talking-about__item-image">
+                                <img src="dist/img/talking-about/items/item1.png" alt="image 1">
+                            </div>
+                            <p class="talking-about__item-text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                        </li>
+                        <li class="talking-about__item">
+                            <div class="talking-about__item-image">
+                                <img src="dist/img/talking-about/items/item2.png" alt="image 2">
+                            </div>
+                            <p class="talking-about__item-text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
+                        </li>
+                        <li class="talking-about__item">
+                            <div class="talking-about__item-image">
+                                <img src="dist/img/talking-about/items/item3.png" alt="image 3">
+                            </div>
+                            <p class="talking-about__item-text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.</p>
+                        </li>
+                        <li class="talking-about__item">
+                            <div class="talking-about__item-image">
+                                <img src="dist/img/talking-about/items/item4.png" alt="image 4">
+                            </div>
+                            <p class="talking-about__item-text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
+                        </li>
+                        <li class="talking-about__item">
+                            <div class="talking-about__item-image">
+                                <img src="dist/img/talking-about/items/item5.png" alt="image 5">
+                            </div>
+                            <p class="talking-about__item-text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus.</p>
+                        </li>
+                        <li class="talking-about__item">
+                            <div class="talking-about__item-image">
+                                <img src="dist/img/talking-about/items/item6.png" alt="image 6">
+                            </div>
+                            <p class="talking-about__item-text">Fusce pharetra erat id odio blandit, nec  pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
+                        </li>
+                    </ul>
+                    <p class="talking-about__text">
+                        Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    </p>
+                </div>
+                
             </div>
            
         </section>

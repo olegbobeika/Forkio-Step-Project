@@ -7,23 +7,31 @@
     // padding-top: 155px;
     // min-height: 718px;
     // position: relative;
-   
+
+    
+
     &__header
     {
         // @include marginVertical(155px,400px);
         background: bgColor(trueWhite) url(../img/fork-app/main_image.png) no-repeat center center;
         background-origin: content-box;
         object-fit: cover;
+        // background-size: 100%;
+       
+    }
+
+    &__container
+    {
         @include flex(column, start, center);
         min-height: 718px;
         padding-left: 20px;
         padding-right: 20px;
-       
+        padding-top: 155px;
     }
 
     &__title
     {
-        margin-top: 155px;
+        // margin-top: 155px;
         font-size: 48px;
         text-transform: capitalize;
     }
@@ -64,7 +72,7 @@
         }
         &__title
         {
-            margin-top: 186px;
+            // margin-top: 186px;
             font-size: 72px;
 
         }
@@ -88,6 +96,14 @@
         &__sub-title
         {
             font-size: 30px;
+        }
+    }
+
+    @media(min-width: 1200px)
+    {
+        &__header
+        {
+            background-size: 100%;
         }
     }
 }
